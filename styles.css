@@ -18,31 +18,49 @@
 .flexContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 body {
-    min-height: 100vh;
+    /* background-image: url(./images/bg-pattern-bottom-mobile.svg), url(./images/bg-pattern-top-mobile.svg); */
     font-family: 'League Spartan', sans-serif;
     font-size: 1.5rem;
+    min-height: 100vh;
 }
 .mainContainer {
-    width: 32.5rem;
-    padding: 3rem 1rem;
+    margin: 6rem 0rem;
+    max-width: 32.5rem;
     text-align: center;
 }
 h1 {
-    font-size: 3.5rem;
     color: var(--VeryDarkMagenta);
+    font-size: 3.5rem;
     letter-spacing: -1.5px;
+    line-height: .8; margin-bottom: 2rem;
     width: 70%;
-    line-height: .8;
 }
 h2 {
+    color: var(--DarkGrayishMagenta);
     font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 3rem;
 }
 .ratingContainer {
     background-color: var(--LightGrayishMagenta);
+    border-radius: .8rem;
     color: var(--VeryDarkMagenta);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 0;
+}
+.ratingContainer:last-of-type {
+    margin-bottom: 4rem;
+}
+.iconStarContainer {
+    margin-bottom: 1rem;
+}
+.iconStar {
+    margin-right: .5rem;
 }
 article {
     background-color: var(--VeryDarkMagenta);
