@@ -6,31 +6,58 @@
 }
 :root {
     font-size: 62.5%;
+
     /* Primary Colors */
+
     --VeryDarkMagenta: hsl(300, 43%, 22%);
     --SoftPink: hsl(333, 80%, 67%);
+
     /* Neutral Colors */
+
     --DarkGrayishMagenta: hsl(303, 10%, 53%);
     --LightGrayishMagenta: hsl(300, 24%, 96%);
     --White: hsl(0, 0%, 100%);
 }
-/* Layout classes */
+/* Layout Classes */
+
 .flexContainer {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 2.5rem;
+}
+/* Style Classes */
+
+article {
+    background-color: var(--VeryDarkMagenta);
+    border-radius: .9rem;
+    margin-bottom: 2rem;
+    padding: 4rem 4rem 3rem 3rem;
+}
+.articleParagraph {
+    color: var(--LightGrayishMagenta);
+    font-weight: 500;
+    grid-column: span 2;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 4rem;
 }
 body {
-    /* background-image: url(./images/bg-pattern-bottom-mobile.svg), url(./images/bg-pattern-top-mobile.svg); */
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-position: top, bottom;
+    background-repeat: no-repeat;
     font-family: 'League Spartan', sans-serif;
     font-size: 1.5rem;
     min-height: 100vh;
 }
-.mainContainer {
-    margin: 6rem 0rem;
-    max-width: 32.5rem;
-    text-align: center;
-}
+
 h1 {
     color: var(--VeryDarkMagenta);
     font-size: 3.5rem;
@@ -45,6 +72,29 @@ h2 {
     line-height: 1.4;
     margin-bottom: 3rem;
 }
+.iconStarContainer {
+    margin-bottom: 1rem;
+}
+.iconStar {
+    margin-right: .5rem;
+}
+.mainContainer {
+    margin: 8.5rem 0rem;
+    max-width: 32.5rem;
+    text-align: center;
+}
+.name {
+    color: var(--LightGrayishMagenta);
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+.nameAndVerifiedBuyerContainer {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    margin-left: 2rem;
+}
 .ratingContainer {
     background-color: var(--LightGrayishMagenta);
     border-radius: .8rem;
@@ -56,12 +106,8 @@ h2 {
 .ratingContainer:last-of-type {
     margin-bottom: 4rem;
 }
-.iconStarContainer {
-    margin-bottom: 1rem;
+.verifiedBuyer {
+    color: var(--SoftPink);
+    opacity: .9;
 }
-.iconStar {
-    margin-right: .5rem;
-}
-article {
-    background-color: var(--VeryDarkMagenta);
-}
+
