@@ -111,3 +111,29 @@ h2 {
     opacity: .9;
 }
 
+/* Media Queries */
+@media screen and (min-width: 1150px) {
+   
+    .mainRatingContainer {
+        flex-basis: 53.5rem;
+    }
+    .ratingContainer:last-of-type {
+        margin-bottom: 0;
+    }
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 110rem;
+    }
+    
+    .headingAndStarContainer {
+        display: flex;
+        margin-bottom: 3rem;
+    }
+    .articleContainer {
+        display: flex;
+    }
+
+    
+}
+
