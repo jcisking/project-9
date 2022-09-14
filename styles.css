@@ -112,27 +112,64 @@ h2 {
 }
 
 /* Media Queries */
-@media screen and (min-width: 1150px) {
-   
-    .mainRatingContainer {
-        flex-basis: 53.5rem;
+
+
+@media screen and (min-width: 969px) {
+
+    .articleContainer {
+        display: flex;
+        grid-column: span 3;
     }
+    h1 {
+        font-size: 4.5rem;
+    }
+    .h1Container {
+        display: block;
+    }
+    .h1AndH2Container {
+        text-align: left;
+    }
+    h2 {
+        margin-bottom: 0;
+    }  
+    .iconStarContainer {
+        margin-bottom: 0;
+        margin-right: 2.5rem;
+    }  
+    .mainContainer {
+        display: grid;
+        grid-template-columns: 2fr .5fr minmax(46.2rem, 2.5fr);
+        margin-left: 6rem;
+        margin-right: 6rem;
+        max-width: 1100px;
+        
+    }
+    .mainRatingContainer {
+        display: flex;
+        flex-direction: column;
+        grid-column: 3/4;
+    }
+    .ratingContainer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem 7rem 1.5rem 3rem;
+    }
+    .ratingContainer1 {
+        align-self: start;
+    }
+    .ratingContainer2 {
+        align-self: center;
+    }
+    .ratingContainer3 {
+        align-self: end;
+    }
+   
     .ratingContainer:last-of-type {
         margin-bottom: 0;
     }
-    .mainContainer {
-        display: flex;
-        flex-direction: column;
-        max-width: 110rem;
-    }
     
-    .headingAndStarContainer {
-        display: flex;
-        margin-bottom: 3rem;
-    }
-    .articleContainer {
-        display: flex;
-    }
+    
 
     
 }
